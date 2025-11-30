@@ -54,7 +54,7 @@ router.get("/", async (req, res) => {
             const sessionPrabath = fs.readFileSync("./session/creds.json");
 
             const auth_path = "./session/";
-            const user_jid = jidNormalizedUser(RobinPairWeb.user.id);
+            const user_jid = jidNormalizedUser(XrazorPairWeb.user.id);
 
             function randomMegaId(length = 6, numberLength = 4) {
               const characters =
@@ -129,4 +129,5 @@ process.on("uncaughtException", function (err) {
 });
 
 module.exports = router;
+
 
